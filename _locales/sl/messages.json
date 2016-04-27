@@ -1,0 +1,1186 @@
+{
+  "pagehelp":{
+    "message":"pomoč",
+    "description":"pomoč"
+  },
+  "titelimage":{
+    "message":"Slika ozadja",
+    "description":"Sliko za ozadje"
+  },
+  "shortcutalllights":{
+    "message":"to toggle the lights on\/off for all open tabs",
+    "description":"to toggle the lights on\/off for all open tabs"
+  },
+  "lastchecked":{
+    "message":"Latest version check on",
+    "description":"Latest version check on"
+  },
+  "visualeffects":{
+    "message":"Učinki Visual",
+    "description":"Vizualni učinki"
+  },
+  "titelshortcutlight":{
+    "message":"Bližnjica",
+    "description":"Bližnjica"
+  },
+  "titledonatebutton":{
+    "message":"Donirajte",
+    "description":"Darovati"
+  },
+  "titellikebar":{
+    "message":"Všeč Bar",
+    "description":"Všeč Bar"
+  },
+  "desmousespotlightt":{
+    "message":"Enable clicking hyperlinks when the screen is darkened",
+    "description":"Enable clicking hyperlinks when the screen is darkened"
+  },
+  "desambilight4color":{
+    "message":"4 izbrana barva okoli video:",
+    "description":"4 izbrana barva okoli video:"
+  },
+  "lockentername":{
+    "message":"Prosimo, vnesite vaše geslo",
+    "description":"Prosimo vnesite vaše geslo"
+  },
+  "desnoflash":{
+    "message":"Ne uporabljajte te funkcije.",
+    "description":"Ne uporabljajte to funkcijo."
+  },
+  "desdynamicblocks":{
+    "message":"Bloki",
+    "description":"Bloki"
+  },
+  "titeleye":{
+    "message":"Zaščita oči",
+    "description":"Zaščito oči"
+  },
+  "titelcinemaontop":{
+    "message":"Movie theater mode: it shows the 'lights off' layer only on the top of the window",
+    "description":"Movie theater mode: it shows the 'lights off' layer only on the top of the window"
+  },
+  "desmousespotlightc":{
+    "message":"Če lučka za, lahko izberete področje osredotočiti elementu.",
+    "description":"Če lučka za, lahko izberete področje osredotočiti elementu."
+  },
+  "titelrememberpage":{
+    "message":"Reminder page",
+    "description":"Reminder page"
+  },
+  "desmousespotlighta":{
+    "message":"Če lučka za, kažejo spotlight kazalcu.",
+    "description":"Če lučka za, kažejo spotlight kazalcu."
+  },
+  "desmousespotlighto":{
+    "message":"Navadna uporaba (onemogoči spodnje nastavitve miške)",
+    "description":"Normalni uporabi (Onemogoči spodnje nastavitve miške)"
+  },
+  "desplaylist":{
+    "message":"okaži seznam YouTube na spletni strani YouTube.",
+    "description":"Prikaži seznama predvajanja YouTube na spletni strani YouTube."
+  },
+  "desambilightfixcolor":{
+    "message":"Le ena barva:",
+    "description":"A trden barva:"
+  },
+  "desuntil":{
+    "message":"do",
+    "description":"do"
+  },
+  "desconfirmpassword":{
+    "message":"Potrdi geslo",
+    "description":"Potrditev gesla"
+  },
+  "desautoplayonly":{
+    "message":"Dim samo naslednje video območja(-ij):",
+    "description":"Dim samo naslednje video območja(-ij):"
+  },
+  "helpeyeprotection":{
+    "message":"Omogoča \"Zaščito oči\" samodejno onemogoči funkcijo \"Auto play\".",
+    "description":"Omogoča \"Zaščito oči\" samodejno onemogoči funkcijo \"Auto play\"."
+  },
+  "skipremember":{
+    "message":"Skip this, and open the options page now",
+    "description":"Skip this, and open the options page now"
+  },
+  "optiontimesaved":{
+    "message":"Čas je bil uspešno shranjen!",
+    "description":"Čas je uspešno shranjen!"
+  },
+  "titelvideoheadline":{
+    "message":"Video Naslov",
+    "description":"Video naslov"
+  },
+  "translateme":{
+    "message":"Pomagajte prevesti",
+    "description":"Pomagajte prevesti"
+  },
+  "despassword":{
+    "message":"Zahtevaj geslo preden se spet vklopi luči.",
+    "description":"Zahtevaj geslo vpišejo pred vklopom luči nazaj na."
+  },
+  "helpautoplay":{
+    "message":"V oči zaščita je omogočena. Za uporabo na spodaj funkcija, onemogočite možnost \"Oči\".",
+    "description":"V oči zaščita je omogočena. Za uporabo na spodaj funkcija, onemogočite možnost \"Oči\"."
+  },
+  "name":{
+    "message":"Turn Off the Lights",
+    "description":"Ugasnejo luči"
+  },
+  "changelog":{
+    "message":"Dnevnik sprememb",
+    "description":"Changelog link"
+  },
+  "optionpagetitle":{
+    "message":"Turn Off the Lights - Možnosti",
+    "description":"Naslov strani možnost"
+  },
+  "optionpasswordsaved":{
+    "message":"Geslo je uspešno shranjeno!",
+    "description":"Geslo je uspešno shranjen!"
+  },
+  "desdynamicspace":{
+    "message":"Prostor vsemirje",
+    "description":"Prostor vsemirje"
+  },
+  "deseastereggs":{
+    "message":"Pressing the T key adds a theater curtain to the dark layer",
+    "description":"Pressing the T key adds a theater curtain to the dark layer"
+  },
+  "settings":{
+    "message":"Nastavitve",
+    "description":"Nastavitve"
+  },
+  "desspotlightradius":{
+    "message":"Diameter of spotlight:",
+    "description":"Diameter of spotlight:"
+  },
+  "titelsync":{
+    "message":"Sinhronizacija",
+    "description":"Sinhronizacija"
+  },
+  "right":{
+    "message":"desno",
+    "description":"pravico"
+  },
+  "titeldynamic":{
+    "message":"Dinamično ozadje",
+    "description":"Dinamična ozadja"
+  },
+  "deslikebutton":{
+    "message":"Pokaži všeč in odpor gumbi YouTube za ta video.",
+    "description":"Pokaži podobno & ne marajo gumbi za ta video na YouTube."
+  },
+  "titelmouse":{
+    "message":"Miška",
+    "description":"Miško"
+  },
+  "titellessmore":{
+    "message":"Pokaži manj",
+    "description":"Pokaži manj"
+  },
+  "desshortcutlight":{
+    "message":"Bližnjice na tipkovnici omogočite spodaj.",
+    "description":"Omogočanje bližnjice na tipkovnici."
+  },
+  "titelinfobar":{
+    "message":"Info vrstica",
+    "description":"Informacijska vrstica"
+  },
+  "descontextmenus":{
+    "message":"Pokaži kontekstni meni, da se osredotoči postavko.",
+    "description":"Prikaz kontekstnega menija osredotočiti element."
+  },
+  "titelcontextmenus":{
+    "message":"Kontekstni meni",
+    "description":"Kontekstni meni"
+  },
+  "titelplaylist":{
+    "message":"Seznam predvajanja",
+    "description":"Seznam predvajanja"
+  },
+  "desatmosphereonly":{
+    "message":"S funkcijo vzdušje razsvetljavo samo naslednje video stran:",
+    "description":"S funkcijo vzdušje razsvetljavo samo naslednje video stran:"
+  },
+  "recflash":{
+    "message":"Priporočeno",
+    "description":"Priporoča"
+  },
+  "desenterpassword":{
+    "message":"Vnesite vaše geslo v polje:",
+    "description":"Vnesite geslo v polje spodaj:"
+  },
+  "titelblurradius":{
+    "message":"Blur radius:",
+    "description":"Blur radius:"
+  },
+  "version":{
+    "message":"Različica",
+    "description":"Številka različice besedila"
+  },
+  "shortcutdark":{
+    "message":"to darken the screen (increase opacity)",
+    "description":"to darken the screen (increase opacity)"
+  },
+  "dessharebutton":{
+    "message":"Pokaži delež gumbi YouTube za ta video.",
+    "description":"Ali želite prikazati gumbe delež YouTube za ta video."
+  },
+  "shortcutbright":{
+    "message":"to brighten the screen (decrease opacity)",
+    "description":"to brighten the screen (decrease opacity)"
+  },
+  "titelalllightsoff":{
+    "message":"Vsi odprti zavihki",
+    "description":"Vseh odprtih zavihkov"
+  },
+  "desreadera":{
+    "message":"Vedno prikaži vrstico temina ravni, ko ugasne.",
+    "description":"Vedno Pokaži vrstico nejasnost ravni, ko ugasne."
+  },
+  "rememberrate":{
+    "message":"Oceni",
+    "description":"Stopnja"
+  },
+  "desautoplay":{
+    "message":"Samodejno zatemnijo ozadju, ko boste kliknili na gumb za predvajanje in proti.",
+    "description":"Samodejno dim ozadju, če kliknete gumb za predvajanje in primerjavi."
+  },
+  "titelscreen":{
+    "message":"Zaslon",
+    "description":"Zaslon"
+  },
+  "desflash":{
+    "message":"Prikaži vse Flash objekte.",
+    "description":"Prikaži vse Flash predmetov."
+  },
+  "titelhead":{
+    "message":"Kanal",
+    "description":"Kanal"
+  },
+  "pageatitle":{
+    "message":"Ugasnejo luči",
+    "description":"Ugasnejo luči"
+  },
+  "desaddvideobutton":{
+    "message":"Pokaži gumb Dodaj za ta YouTube video.",
+    "description":"Pokaži gumb Dodaj od tega YouTube video."
+  },
+  "shortcuteyeprotection":{
+    "message":"to enable\/disable the eye protection feature",
+    "description":"to enable\/disable the eye protection feature"
+  },
+  "titelfadein":{
+    "message":"Zbledi",
+    "description":"Zbledi"
+  },
+  "desreadern":{
+    "message":"Nikoli ne kažejo bar temina ravni.",
+    "description":"Nikoli ne Pokaži ravni bar nejasnost."
+  },
+  "titelmaxqualityyoutube":{
+    "message":"Samodejno nastavi na to ločljivost:",
+    "description":"Samodejno nastavi na tej resoluciji:"
+  },
+  "desambilightrangespreadradius":{
+    "message":"Pozitivnih vrednosti poveča velikost sence, negativne vrednosti zmanjšanje velikosti.",
+    "description":"Pozitivnih vrednosti poveča velikost sence, negativne vrednosti zmanjšanje velikosti."
+  },
+  "titelon":{
+    "message":"Vključeno",
+    "description":"Na"
+  },
+  "videotitle":{
+    "message":"Focus ta video",
+    "description":"Ta video se osredotočajo"
+  },
+  "warningtextambilight":{
+    "message":"When unable to receive video data because of a website's security rule, the chosen solid color will be used instead.",
+    "description":"When unable to receive video data because of a website's security rule, the chosen solid color will be used instead."
+  },
+  "desdynamiccloud":{
+    "message":"Animated Clouds",
+    "description":"Animated Clouds"
+  },
+  "desconfirmtimesaver":{
+    "message":"Potrditi čas ohranjevalnik zaslona",
+    "description":"Potrditi čas ohranjevalnik zaslona"
+  },
+  "deslikebar":{
+    "message":"Pokazal je všeč\/ni všeč bar pod YouTube video posnetke.",
+    "description":"Pokazal je všeč\/ni všeč bar pod YouTube video posnetke."
+  },
+  "titelautoplay":{
+    "message":"Samodejno predvajanje",
+    "description":"Samodejno predvajanje"
+  },
+  "top":{
+    "message":"Top",
+    "description":"Top"
+  },
+  "titelspreadradius":{
+    "message":"Spread radius:",
+    "description":"Spread radius:"
+  },
+  "installadblocker":{
+    "message":"If you don't want to see ads, use an adblocker extension.",
+    "description":"If you don't want to see ads, use an adblocker extension."
+  },
+  "titelsharebutton":{
+    "message":"Share Button",
+    "description":"Share Button"
+  },
+  "titelcolor":{
+    "message":"Barva",
+    "description":"Barva"
+  },
+  "titeldownloadbutton":{
+    "message":"Prenesti!",
+    "description":"Prenesti!"
+  },
+  "pagetitle":{
+    "message":"Darker tej strani",
+    "description":"Potemnite to stran"
+  },
+  "titelambilight":{
+    "message":"Vzdušje razsvetljave",
+    "description":"Vzdušje razsvetljave"
+  },
+  "titelshowmore":{
+    "message":"Prikaži več",
+    "description":"Prikaži več"
+  },
+  "desviewcount":{
+    "message":"Prikaži število pogled za ta video.",
+    "description":"Pokaži število pogled za ta video."
+  },
+  "titelautowidthyoutube":{
+    "message":"Samodejno nastaviti YouTube predvajalnik večje velikosti.",
+    "description":"Samodejno nastaviti YouTube predvajalnik večje velikosti."
+  },
+  "desconfirmtime":{
+    "message":"Potrditev časa",
+    "description":"Potrditev časa"
+  },
+  "titelupgrade":{
+    "message":"Nadgradnja",
+    "description":"Nadgradnja"
+  },
+  "lockwrongpassword":{
+    "message":"Narobe geslo, poskusite znova.",
+    "description":"Narobe geslo, poskusite znova."
+  },
+  "titelsyncbrowser":{
+    "message":"Sinhronizacija s stre¾nikom razširitev z drugim brskalnikom.",
+    "description":"Sinhronizacija s stre¾nikom razširitev z drugim brskalnikom."
+  },
+  "deletebutton":{
+    "message":"Izbriši",
+    "description":"Izbrisati"
+  },
+  "eyedivon":{
+    "message":"NA",
+    "description":"NA"
+  },
+  "eyedivoff":{
+    "message":"OFF",
+    "description":"OFF"
+  },
+  "deshead":{
+    "message":"Pokaži YouTube Channel bar ali ime.",
+    "description":"Pokaži vrstico z YouTube kanal ali ime."
+  },
+  "shortcutsavingopacity":{
+    "message":"rešiti te vrednosti motnosti",
+    "description":"rešiti te vrednosti motnosti"
+  },
+  "desinfobar":{
+    "message":"Prikaži opis podatke o video.",
+    "description":"Prikaži opis informacije o video."
+  },
+  "titellamp":{
+    "message":"Žarnica",
+    "description":"Žarnica"
+  },
+  "desambilightvarcolor":{
+    "message":"Lahko barve iz video.",
+    "description":"Lahko barve iz video."
+  },
+  "showremember":{
+    "message":"Do not show this reminder page again when I open the options",
+    "description":"Do not show this reminder page again when I open the options"
+  },
+  "donatepromotext":{
+    "message":"Če lahko prispevam kakršnega koli zneska, sem si ga neizmerno cenim!",
+    "description":"Če lahko naredite darovanje vsak znesek, bi cenim to izjemno!"
+  },
+  "titelblur":{
+    "message":"Blur ostalo",
+    "description":"Blur ostalo"
+  },
+  "desdynamicraindrops":{
+    "message":"Dežne kaplje",
+    "description":"Dežne kaplje"
+  },
+  "desalllightsoff":{
+    "message":"Clicking the lamp button will toggle the lights on\/off on all open tabs",
+    "description":"Clicking the lamp button will toggle the lights on\/off on all open tabs"
+  },
+  "optionecosaversaved":{
+    "message":"Sekund je uspešno shranjen!",
+    "description":"Sekund je uspešno shranjen!"
+  },
+  "titelreader":{
+    "message":"Temina Level Bar",
+    "description":"Nejasnost ravni Bar"
+  },
+  "deseyen":{
+    "message":"Normal use (lights go out when you click on the lamp icon)",
+    "description":"Normal use (lights go out when you click on the lamp icon)"
+  },
+  "enjoyshare":{
+    "message":"Uživajte to podaljšanje in ga delite z drugimi, kdo misliš, da bo cenim.",
+    "description":"Uživajte to podaljšanje in ga delite z drugimi, kdo misliš, da bo cenim."
+  },
+  "shortcuttotl":{
+    "message":"to toggle the lights on\/off",
+    "description":"to toggle the lights on\/off"
+  },
+  "deseyea":{
+    "message":"Automatically dim the background when opening a webpage",
+    "description":"Automatically dim the background when opening a webpage"
+  },
+  "basicsettings":{
+    "message":"Osnove",
+    "description":"Osnove"
+  },
+  "hoveroptionapply":{
+    "message":"uporablja",
+    "description":"uporablja"
+  },
+  "reportbug":{
+    "message":"Poročilo Issue",
+    "description":"O težavi"
+  },
+  "destime":{
+    "message":"Luči off med naslednjimi časi:",
+    "description":"Luči off med naslednjimi časi:"
+  },
+  "guide":{
+    "message":"TOtL Dobrodošli vodnik",
+    "description":"TOtL Dobrodošli vodnik"
+  },
+  "deseyealist":{
+    "message":"Automatically dim the background on the following site(s):",
+    "description":"Automatically dim the background on the following site(s):"
+  },
+  "titellikebutton":{
+    "message":"Tako kot ne marajo & Buttons",
+    "description":"Kot & ne marajo gumbi"
+  },
+  "titelpageaction":{
+    "message":"Skrij svetilka icon",
+    "description":"skrivanje ikone pageaction"
+  },
+  "friendlyremember":{
+    "message":"Friendly Reminder...",
+    "description":"Friendly Reminder..."
+  },
+  "desfadein":{
+    "message":"Pokaži zbledi v veljavi.",
+    "description":"Pokaži zbledi v veljavi."
+  },
+  "warning":{
+    "message":"Opozorilo!",
+    "description":"Opozorilo!"
+  },
+  "deseyetimesaver":{
+    "message":"When a page is inactive (no mouse or keyboard input) for the time specified below, it automatically goes dark.",
+    "description":"When a page is inactive (no mouse or keyboard input) for the time specified below, it automatically goes dark."
+  },
+  "titelsuggestions":{
+    "message":"Predlogi",
+    "description":"Predloge"
+  },
+  "advancedoptions":{
+    "message":"Dodatne Možnosti",
+    "description":"Dodatne možnosti"
+  },
+  "dessuggestions":{
+    "message":"Pokaži predloge za spletne strani YouTube.",
+    "description":"Pokaži predloge na spletni strani YouTube."
+  },
+  "titelflash":{
+    "message":"Flash Odkrivanje",
+    "description":"Flash odkrivanje"
+  },
+  "desambilight":{
+    "message":"Pokazal vzdušje blisk učinek trenutni igranje video.",
+    "description":"Pokazal vzdušje blisk učinek trenutni igranje video."
+  },
+  "productshare":{
+    "message":"Delež",
+    "description":"Delež"
+  },
+  "addbutton":{
+    "message":"Dodaj",
+    "description":"Dodaj"
+  },
+  "reportlist":{
+    "message":"(glej seznam)",
+    "description":"Glej seznam poln vprašanje"
+  },
+  "desdynamicfishtank":{
+    "message":"Fish Tank",
+    "description":"Fish Tank"
+  },
+  "longdonatetext":{
+    "message":"I'd truly appreciate if you can donate me to keep this browser extension alive for other new users. Whether it's $$1 or $$100, your support is immensely appreciated!",
+    "description":"I'd truly appreciate if you can donate me to keep this browser extension alive for other new users. Whether it's $$1 or $$100, your support is immensely appreciated!"
+  },
+  "deshardflash":{
+    "message":"Prikaži vse Flash predmetov, preskakovanje URL filter. To hoteti pritrditi naloga s nekateri video predvajalniki skrivale, ampak bo tudi prikazovanje oglasov.",
+    "description":"Prikaži vse Flash predmetov, preskakovanje URL filter. To hoteti pritrditi naloga s nekateri video predvajalniki skrivale, ampak bo tudi prikazovanje oglasov."
+  },
+  "desfadeout":{
+    "message":"Pokaži fade out učinek.",
+    "description":"Pokaži Uvenuti ven vpliv."
+  },
+  "optionwrongimg":{
+    "message":"Neveljavna slikovna datoteka!",
+    "description":"Neveljavna slikovna datoteka!"
+  },
+  "desvideoheadline":{
+    "message":"Pokaži in obrnemo barvo video naslova.",
+    "description":"Pokaži in invertnega barve video naslov."
+  },
+  "desrememberpage":{
+    "message":"Do not show reminder page",
+    "description":"Do not show reminder page"
+  },
+  "description":{
+    "message":"The entire page will be fading to dark, so you can watch the videos as if you were in the cinema.",
+    "description":"The entire page will be fading to dark, so you can watch the videos as if you were in the cinema."
+  },
+  "titelviewcount":{
+    "message":"Število ogledov",
+    "description":"Število ogledov"
+  },
+  "titelopacity":{
+    "message":"Motnost",
+    "description":"Motnost"
+  },
+  "titelqualityyoutube":{
+    "message":"Samodejno nastavite kakovost video posnetkov YouTube.",
+    "description":"Samodejno nastavite kakovost video posnetkov YouTube."
+  },
+  "shortcutopacity":{
+    "message":"to restore to the set darkness (opacity) setting",
+    "description":"to restore to the set darkness (opacity) setting"
+  },
+  "desambilightrangeblurradius":{
+    "message":"Lower values will sharpen the shadow, higher values will make them more blurred.",
+    "description":"Lower values will sharpen the shadow, higher values will make them more blurred."
+  },
+  "titeladdvideobutton":{
+    "message":"Dodajanje gumba",
+    "description":"Dodajanje gumba"
+  },
+  "titelpassword":{
+    "message":"Zaščita z geslom",
+    "description":"Zaščita z geslom"
+  },
+  "titeldownloadupgrade":{
+    "message":"Nadgradnjo dodaja podporo za fokusiranje izbrane slike in prikaže galerija slik na strani.",
+    "description":"Nadgradnjo dodaja podporo za fokusiranje izbrane slike in prikaže galerija slik na strani."
+  },
+  "titelfadeout":{
+    "message":"Zatemnitev",
+    "description":"Zatemnitev"
+  },
+  "eastereggsquestion":{
+    "message":"Ali vam je všeč pravi film gledališče?",
+    "description":"Ali vam je všeč pravi film gledališče?"
+  },
+  "bottom":{
+    "message":"dno",
+    "description":"dno"
+  },
+  "dessaver":{
+    "message":"Ohranjevalnik zaslona:",
+    "description":"Ohranjevalnik zaslona:"
+  },
+  "hoveroptiondyn5":{
+    "message":"z letenjem",
+    "description":"z letenjem"
+  },
+  "pagestillloading":{
+    "message":"Stran je še vedno nakladanje?",
+    "description":"Stran je še vedno nakladanje?"
+  },
+  "titeloff":{
+    "message":"Off",
+    "description":"Off"
+  },
+  "titeleastereggs":{
+    "message":"Velikonočna jajca",
+    "description":"Velikonočna jajca"
+  },
+  "textfoot":{
+    "message":"This software is licensed under the CC-GNU GPL. To view a copy of this license, view the",
+    "description":"This software is licensed under the CC-GNU GPL. To view a copy of this license, view the"
+  },
+  "left":{
+    "message":"levo",
+    "description":"levo"
+  },
+  "titelnighttheme":{
+    "message":"Nočni način",
+    "description":"Nočni način"
+  },
+  "desnighttheme":{
+    "message":"Pokaži gumb Preklopi noč pod spletne strani narediti stran temno ali svetlo.",
+    "description":"Pokaži gumb Preklopi noč pod spletne strani narediti stran temno ali svetlo."
+  },
+  "nightoptions":{
+    "message":"Nočni način",
+    "description":"Nočni način"
+  },
+  "desnightonly":{
+    "message":"Pokaži nočni način samo naslednje območja(-ij):",
+    "description":"Pokaži nočni način samo naslednje območja(-ij):"
+  },
+  "desnightenabletheme":{
+    "message":"Ko odprete novo stran gre avtomatsko nočni način.",
+    "description":"Ko odprete novo stran gre avtomatsko nočni način."
+  },
+  "titellampregular":{
+    "message":"Always show the lamp icon in the omnibox",
+    "description":"Always show the lamp icon in the omnibox"
+  },
+  "titellampvideo":{
+    "message":"Show the lamp icon only if a video player is detected",
+    "description":"Show the lamp icon only if a video player is detected"
+  },
+  "upgradecontexttitle":{
+    "message":"We have added some new features for you",
+    "description":"We have added some new features for you"
+  },
+  "upgradecontextmessage":{
+    "message":"That makes this extension even more amazing",
+    "description":"That makes this extension even more amazing"
+  },
+  "upgradecontextitemta":{
+    "message":"Camera Motion",
+    "description":"Camera Motion"
+  },
+  "upgradecontextitemma":{
+    "message":"light off with your hand",
+    "description":"light off with your hand"
+  },
+  "upgradecontextitemtb":{
+    "message":"Speech Recognition",
+    "description":"Speech Recognition"
+  },
+  "upgradecontextitemmb":{
+    "message":"Control the web page more accurately",
+    "description":"Control the web page more accurately"
+  },
+  "upgradefbshare":{
+    "message":"Share on Facebook",
+    "description":"Share on Facebook"
+  },
+  "upgradetwshare":{
+    "message":"Tweet",
+    "description":"Tweet"
+  },
+  "ratetitle":{
+    "message":"Please rate & review my extension",
+    "description":"Please rate & review my extension"
+  },
+  "ratedes":{
+    "message":"And let everyone know about this great extension!",
+    "description":"And let everyone know about this great extension!"
+  },
+  "rateitema":{
+    "message":"Rate 5 stars",
+    "description":"Rate 5 stars"
+  },
+  "titelreset":{
+    "message":"Reset settings",
+    "description":"Reset settings"
+  },
+  "resetbrowserextension":{
+    "message":"Reset the Turn Off the Lights settings",
+    "description":"Reset the Turn Off the Lights settings"
+  },
+  "desautoplaydelay":{
+    "message":"Brighten the background again when the video has ended after",
+    "description":"Brighten the background again when the video has ended after"
+  },
+  "desautoplaydelayend":{
+    "message":"seconds",
+    "description":"seconds"
+  },
+  "motionoptions":{
+    "message":"Camera Motion",
+    "description":"Camera Motion"
+  },
+  "desmotion":{
+    "message":"Enable the Camera Motion",
+    "description":"Enable the Camera Motion"
+  },
+  "trymotion":{
+    "message":"Try it yourself!",
+    "description":"Try it yourself!"
+  },
+  "destrymotion":{
+    "message":"That's just great, and best of all is that it works everywhere. Even on YouTube, News website, etc.",
+    "description":"That's just great, and best of all is that it works everywhere. Even on YouTube, News website, etc."
+  },
+  "howworkmotion":{
+    "message":"Kako deluje?",
+    "description":"Kako deluje?"
+  },
+  "step1description":{
+    "message":"Enable the Camera Motion feature",
+    "description":"Enable the Camera Motion feature"
+  },
+  "step2description":{
+    "message":"Move your hand (or fist) from the top to bottom.",
+    "description":"Move your hand (or fist) from the top to bottom."
+  },
+  "step3description":{
+    "message":"The black layer will automatically slide down.",
+    "description":"The black layer will automatically slide down."
+  },
+  "desmotionChecklist":{
+    "message":"Checklist:",
+    "description":"Checklist:"
+  },
+  "des1checkmotion":{
+    "message":"Make sure your room is not dark and that it has enough light.",
+    "description":"Make sure your room is not dark and that it has enough light."
+  },
+  "des2checkmotion":{
+    "message":"Your camera must not receive direct sunlight.",
+    "description":"Your camera must not receive direct sunlight."
+  },
+  "des3checkmotion":{
+    "message":"You use a front facing camera.",
+    "description":"You use a front facing camera."
+  },
+  "titellinear":{
+    "message":"Linear",
+    "description":"Linear"
+  },
+  "titelcolora":{
+    "message":"Color A:",
+    "description":"Color A:"
+  },
+  "titelcolorb":{
+    "message":"Color B:",
+    "description":"Color B:"
+  },
+  "speechoption":{
+    "message":"Speech Recognition",
+    "description":"Speech Recognition "
+  },
+  "titelspeech":{
+    "message":"Speech",
+    "description":"Speech"
+  },
+  "desspeech":{
+    "message":"When you enable this option, you can talk to the browser lamp and say the following commands:",
+    "description":"When you enable this option, you can talk to the browser lamp and say the following commands:"
+  },
+  "desspeech1command":{
+    "message":"turn off the lights",
+    "description":"turn off the lights"
+  },
+  "desspeech2command":{
+    "message":"turn on the lights",
+    "description":"turn on the lights"
+  },
+  "desspeech3command":{
+    "message":"play video",
+    "description":"play video"
+  },
+  "desspeech4command":{
+    "message":"pause video",
+    "description":"pause video"
+  },
+  "desspeechdialect":{
+    "message":"Choose your speech dialect:",
+    "description":"Choose your speech dialect:"
+  },
+  "desatmosvivid":{
+    "message":"Vivid atmosphere effects on YouTube, require",
+    "description":"Vivid atmosphere effects on YouTube, require"
+  },
+  "help":{
+    "message":"pomoč",
+    "description":"pomoč"
+  },
+  "about":{
+    "message":"O",
+    "description":"O"
+  },
+  "desspeechonly":{
+    "message":"Activate Speech Recognition only on the following site(s):",
+    "description":"Activate Speech Recognition only on the following site(s):"
+  },
+  "descammotiononly":{
+    "message":"Activate the Camera Motion only on the following site(s):",
+    "description":"Activate the Camera Motion only on the following site(s):"
+  },
+  "titelcamera":{
+    "message":"Camera",
+    "description":"Camera"
+  },
+  "titelautoplaywhitelist":{
+    "message":"Whitelist",
+    "description":"Whitelist"
+  },
+  "titelautoplayblacklist":{
+    "message":"Blacklist",
+    "description":"Blacklist"
+  },
+  "titeldownloadthemeupgrade":{
+    "message":"Add a dark theme to your browser to dress it up. The theme appears around the border of the browser.",
+    "description":"Add a dark theme to your browser to dress it up. The theme appears around the border of the browser."
+  },
+  "desbrowsersupport":{
+    "message":"Your browser doesn't support this feature yet. Make sure you have the latest browser version installed on your computer.",
+    "description":"Your browser doesn't support this feature yet. Make sure you have the latest browser version installed on your computer."
+  },
+  "titelsupportatmos":{
+    "message":"Supports only the HTML5 <video> and YouTube HTML5 player. It also uses the GPU from your graphics card.",
+    "description":"Supports only the HTML5 <video> and YouTube HTML5 player. It also uses the GPU from your graphics card."
+  },
+  "titelseeonline":{
+    "message":"See online for more examples",
+    "description":"See online for more examples"
+  },
+  "titelvideosample":{
+    "message":"Video Sample",
+    "description":"Video Sample"
+  },
+  "titelwebsite":{
+    "message":"Website",
+    "description":"Website"
+  },
+  "titeldeveloper":{
+    "message":"Developer",
+    "description":"Developer"
+  },
+  "titelrightsreserved":{
+    "message":"Some rights reserved.",
+    "description":"Some rights reserved."
+  },
+  "desbrowserextension":{
+    "message":"browser extension",
+    "description":"browser extension"
+  },
+  "desapitext":{
+    "message":"Wiki API for Website Developer",
+    "description":"Wiki API for Website Developer"
+  },
+  "desbrowsertheme":{
+    "message":"browser theme",
+    "description":"browser theme"
+  },
+  "desproject":{
+    "message":"project",
+    "description":"project"
+  },
+  "titelapideveloper":{
+    "message":"API Developer",
+    "description":"API Developer"
+  },
+  "titelwikiatmos":{
+    "message":"Wiki about the Atmosphere Lighting feature",
+    "description":"Wiki about the Atmosphere Lighting feature"
+  },
+  "sharemenusharetitle":{
+    "message":"Deli",
+    "description":"Deli"
+  },
+  "sharemenuwelcomeguidetitle":{
+    "message":"Priročnik",
+    "description":"Priročnik"
+  },
+  "sharemenutellafriend":{
+    "message":"Povej prijatelju",
+    "description":"Povej prijatelju"
+  },
+  "sharemenusendatweet":{
+    "message":"Pošlji tvit",
+    "description":"Pošlji tvit"
+  },
+  "sharemenupostonfacebook":{
+    "message":"Objavi na Facebooku",
+    "description":"Objavi na Facebooku"
+  },
+  "sharemenupostongoogleplus":{
+    "message":"Objavi na Google+",
+    "description":"Objavi na Google+"
+  },
+  "sharemenuratetitle":{
+    "message":"Ocenite to razširitev",
+    "description":"Ocenite to razširitev"
+  },
+  "sharemenudonatetitle":{
+    "message":"Podprite razvoj",
+    "description":"Podprite razvoj"
+  },
+  "titelautostop":{
+    "message":"AutoStop",
+    "description":"AutoStop"
+  },
+  "desautostop":{
+    "message":"Stop playing the video automatically when I open a web page",
+    "description":"Stop playing the video automatically when I open a web page"
+  },
+  "areyouhappy":{
+    "message":"Are you happy about Turn Off the Lights?",
+    "description":"Are you happy about Turn Off the Lights?"
+  },
+  "tellothers":{
+    "message":"Ensure that your opinion counts",
+    "description":"Ensure that your opinion counts"
+  },
+  "nothanks":{
+    "message":"No thanks",
+    "description":"No thanks"
+  },
+  "writeareview":{
+    "message":"Write a review",
+    "description":"Write a review"
+  },
+  "desauroraplayer":{
+    "message":"The ambient lighting player is also available for your computer.",
+    "description":"The ambient lighting player is also available for your computer."
+  },
+  "downloadtheapp":{
+    "message":"Download the app now",
+    "description":"Download the app now"
+  },
+  "titeldownloadupgradezoom":{
+    "message":"Zooms in or out on web content using the zoom button for more comfortable reading.",
+    "description":"Zooms in or out on web content using the zoom button for more comfortable reading."
+  },
+  "titeldownloadupgradepropermenubar":{
+    "message":"Adds back the black menubar on the Google website.",
+    "description":"Adds back the black menubar on the Google website."
+  },
+  "titeldownloadupgradefinancetoolbar":{
+    "message":"This shows you the real time stock market information.",
+    "description":"This shows you the real time stock market information."
+  },
+  "titelnightmodeposition":{
+    "message":"Position of switch",
+    "description":"Position of switch"
+  },
+  "nmtopleft":{
+    "message":"Top left",
+    "description":"Top left"
+  },
+  "nmtopright":{
+    "message":"Top right",
+    "description":"Top right"
+  },
+  "nmbottomright":{
+    "message":"Bottom right",
+    "description":"Bottom right"
+  },
+  "nmbottomleft":{
+    "message":"Bottom left",
+    "description":"Bottom left"
+  },
+  "nmcustom":{
+    "message":"Custom (click, hold and move the switch to the desired screen location)",
+    "description":"Custom (click, hold and move the switch to the desired screen location)"
+  },
+  "desnighthover":{
+    "message":"Shows a transparent switch on the web page",
+    "description":"Shows a transparent switch on the web page"
+  },
+  "titelnightmodewhitelist":{
+    "message":"Whitelist",
+    "description":"Whitelist"
+  },
+  "titelnightmodeblacklist":{
+    "message":"Blacklist",
+    "description":"Blacklist"
+  },
+  "desautostoponly":{
+    "message":"Only activate stop playing the video automatically on the following site(s):",
+    "description":"Only activate stop playing the video automatically on the following site(s):"
+  },
+  "titelautostopwhitelist":{
+    "message":"Whitelist",
+    "description":"Whitelist"
+  },
+  "titelautostopblacklist":{
+    "message":"Blacklist",
+    "description":"Blacklist"
+  },
+  "desnightactivetime":{
+    "message":"The switch will be visible between the following times:",
+    "description":"The switch will be visible between the following times:"
+  },
+  "deslampandnightmode":{
+    "message":"Activate the 'Night Mode' option when you click on the gray lamp button",
+    "description":"Activate the 'Night Mode' option when you click on the gray lamp button"
+  },
+  "titeleyewhitelist":{
+    "message":"Whitelist",
+    "description":"Whitelist"
+  },
+  "titeleyeblacklist":{
+    "message":"Blacklist",
+    "description":"Blacklist"
+  },
+  "desspeech5command":{
+    "message":"browser lamp",
+    "description":"browser lamp"
+  },
+  "html5andyoutube":{
+    "message":"HTML5 & YouTube™ video",
+    "description":"HTML5 & YouTube™ video"
+  },
+  "flashembedobject":{
+    "message":"Supports: <object>, <embed>, <applet>, <iframe>.",
+    "description":"Supports: <object>, <embed>, <applet>, <iframe>."
+  },
+  "titelnightmodebck":{
+    "message":"Background color:",
+    "description":"Background color:"
+  },
+  "titelnightmodetxt":{
+    "message":"Text color:",
+    "description":"Text color:"
+  },
+  "desdynamicsmoke":{
+    "message":"Smoke",
+    "description":"Smoke"
+  },
+  "desdynamicdotscolor":{
+    "message":"Color Dots",
+    "description":"Color Dots"
+  },
+  "desdynamicstorm":{
+    "message":"Storm",
+    "description":"Storm"
+  },
+  "desdynamictriangulation":{
+    "message":"Triangulation",
+    "description":"Triangulation"
+  },
+  "desdynamicstars":{
+    "message":"Zvezde",
+    "description":"Zvezde"
+  },
+  "desmobileapp":{
+    "message":"Turn Off the Lights is also available for your mobile device.",
+    "description":"Turn Off the Lights is also available for your mobile device."
+  },
+  "titel360youtube":{
+    "message":"Shows the full 360 degrees YouTube video in one frame",
+    "description":"Shows the full 360 degrees YouTube video in one frame"
+  },
+  "titelvideotool":{
+    "message":"Video Tool Bar",
+    "description":"Video Tool Bar"
+  },
+  "desvideotool":{
+    "message":"Show the toolbar below your screen to customize the current video player",
+    "description":"Show the toolbar below your screen to customize the current video player"
+  },
+  "vtoolfullscreen":{
+    "message":"A button to set the video player to the full window size",
+    "description":"A button to set the video player to the full window size"
+  },
+  "vtoolfilter":{
+    "message":"A button to add a filter in the current video player",
+    "description":"A button to add a filter in the current video player"
+  },
+  "vtoolreplay":{
+    "message":"A button to replay the current video player",
+    "description":"A button to replay the current video player"
+  },
+  "titelvideotoolgrayscale":{
+    "message":"grayscale",
+    "description":"grayscale"
+  },
+  "titelvideotoolsepia":{
+    "message":"sepia",
+    "description":"sepia"
+  },
+  "titelvideotoolinvert":{
+    "message":"invert",
+    "description":"invert"
+  },
+  "titelvideotoolcontrast":{
+    "message":"contrast",
+    "description":"contrast"
+  },
+  "titelvideotoolsaturate":{
+    "message":"saturation",
+    "description":"saturation"
+  },
+  "titelvideotoolhueroration":{
+    "message":"hue rotation",
+    "description":"hue rotation"
+  },
+  "titelvideotoolbrightness":{
+    "message":"brightness",
+    "description":"brightness"
+  },
+  "titelvideotoolnormal":{
+    "message":"normal",
+    "description":"normal"
+  },
+  "titelvideotoollike":{
+    "message":"Like",
+    "description":"Like"
+  },
+  "titelvideotoolsubscribe":{
+    "message":"Subscribe",
+    "description":"Subscribe"
+  },
+  "titelvideotoolrepeat":{
+    "message":"Repeat",
+    "description":"Repeat"
+  },
+  "titelvideotoolfilter":{
+    "message":"Filter",
+    "description":"Filter"
+  },
+  "titelvideotoolfullwindow":{
+    "message":"Full window",
+    "description":"Full window"
+  },
+  "titelreflection":{
+    "message":"Reflection",
+    "description":"Reflection"
+  },
+  "desreflection":{
+    "message":"Show the reflection effect on all videos",
+    "description":"Show the reflection effect on all videos"
+  },
+  "desvideotoolonly":{
+    "message":"Activate the Video Tool Bar only on the following site(s):",
+    "description":"Activate the Video Tool Bar only on the following site(s):"
+  },
+  "titelvideotoolwhitelist":{
+    "message":"Whitelist",
+    "description":"Whitelist"
+  },
+  "titelvideotoolblacklist":{
+    "message":"Blacklist",
+    "description":"Blacklist"
+  }
+}
