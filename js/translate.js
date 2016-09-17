@@ -27,7 +27,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/GPL/2.
 */
 //================================================
 
-//if (typeof safari !== "undefined") {
+if (typeof safari !== "undefined") {
   chrome = {
     i18n: {
       getMessage: function(messageID, args) {
@@ -45,7 +45,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/GPL/2.
           // Translation
           var fetchAndParse = function(locale) {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/" + "_locales/" + locale + "/messages.json", false);
+            xhr.open("GET", safari.extension.baseURI + "_locales/" + locale + "/messages.json", false);
             xhr.onreadystatechange = function() {
               if (this.readyState === 4 && this.responseText) {
                 var parsed = JSON.parse(this.responseText);
@@ -91,7 +91,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/GPL/2.
     }
   };
 
-//}
+}
 
 // Search for data and translate it to current use language
 items = document.querySelectorAll("[data-i18n]");
