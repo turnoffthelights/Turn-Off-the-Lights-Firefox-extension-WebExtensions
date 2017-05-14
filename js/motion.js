@@ -2,8 +2,8 @@
 /*
 
 Turn Off the Lights
-The entire page will be fading to dark, so you can watch the videos as if you were in the cinema.
-Copyright (C) 2016 Stefan vd
+The entire page will be fading to dark, so you can watch the video as if you were in the cinema.
+Copyright (C) 2017 Stefan vd
 www.stefanvd.net
 www.turnoffthelights.com
 
@@ -52,7 +52,7 @@ window.URL = window.URL || window.webkitURL;
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
 function cameramotionlights(){
-chrome.storage.local.get(['motion', 'cammotiononly', 'cammotionDomains'], function(response){
+chrome.storage.sync.get(['motion', 'cammotiononly', 'cammotionDomains'], function(response){
 var motion = response['motion'];
 var cammotiononly = response['cammotiononly'];
 
@@ -338,7 +338,7 @@ huemin = 0.0; huemax = 0.10; satmin = 0.0; satmax = 1.0; valmin = 0.4; valmax = 
                         if (davg > overthresh) {
                             // console.log('over up');
 							// to enable the fall down effect
-							chrome.storage.local.set({"slideeffect": true});
+							chrome.storage.sync.set({"slideeffect": true});
                             chrome.tabs.query({active: true}, function (tabs) {
                                 for (var i = 0; i < tabs.length; i++) {
                                     if (tabs.url.match(/^http/i)){
@@ -351,7 +351,7 @@ huemin = 0.0; huemax = 0.10; satmin = 0.0; satmax = 1.0; valmin = 0.4; valmax = 
                         else{
 							// console.log('up');
 							// to enable the fall down effect
-							chrome.storage.local.set({"slideeffect": true});
+							chrome.storage.sync.set({"slideeffect": true});
 							chrome.tabs.query({active: true}, function (tabs) {
                                 for (var i = 0; i < tabs.length; i++) {
                                     if (tabs.url.match(/^http/i)){

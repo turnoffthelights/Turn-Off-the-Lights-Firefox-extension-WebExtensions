@@ -2,44 +2,48 @@
   "manifest_version": 2,
   "name": "__MSG_name__",
   "short_name": "TOtL",
-  "version": "3.3.0.0",
+  "version": "3.4.17.0",
   "description": "__MSG_description__",
-  "homepage_url": "https://www.turnoffthelights.com",
-  "icons": { "16": "icons/icon16.png",
-             "32": "icons/icon32.png",
-             "48": "icons/icon48.png",
-             "128": "icons/icon128.png"
-           },
+  "author": "Stefan vd",
+  "homepage_url": "https://www.turnoffthelights.com/support/",
+  "icons": {
+      "16": "icons/icon16.png",
+      "24": "icons/icon24.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "96": "icons/icon96.png",
+      "128": "icons/icon128.png"
+  },
   "default_locale": "en",
   "browser_action": {
       "browser_style": false,
       "default_title": "__MSG_pageatitle__",
-	    "default_icon": {
-        "19": "icons/iconstick1.png",
-        "38": "icons/iconstick38.png"
+      "default_icon": {
+        "16": "icons/iconstick16.png",
+        "19": "icons/iconstick19.png",
+        "20": "icons/iconstick20.png",
+        "32": "icons/iconstick32.png",
+        "38": "icons/iconstick38.png",
+        "40": "icons/iconstick40.png",
+        "64": "icons/iconstick64.png"
       }
-  },
+  },  
   "background": {
     "page": "background.html"
   },
-  "web_accessible_resources": [
-    "images/minimize_on.png",
-    "images/minimize.png",
-    "icons/icon16.png",
-    "icons/icon16@2x.png",
-	  "js/injected.js",
-	  "images/theater.jpg",
-	  "images/Smoke10.png",
-    "images/cloud.png",
-    "js/fpsinject.js"
-  ],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
+      "exclude_matches": ["*://*.chromeactions.com/*"],
       "css" : ["css/light.css"],
       "js": ["js/content.js"],
       "run_at": "document_end"
     },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/screenshader.js"],
+      "run_at": "document_start"
+    },    
     {
       "matches": ["*://*.youtube.com/*"],
       "js": [ "js/fps.js"],
@@ -52,7 +56,7 @@
     }
   ],
   "commands": {
-    "_execute_page_action": {
+    "_execute_browser_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+L",
         "mac": "MacCtrl+Shift+L"
@@ -64,7 +68,7 @@
               "mac": "MacCtrl+Shift+N"
             },
             "description": "__MSG_titelnighttheme__"
-          }
+    }
   },
   "options_ui": {
     "page": "options.html",
@@ -73,7 +77,7 @@
   "applications": {
     "gecko": {
       "id": "stefanvandamme@stefanvd.net",
-      "strict_min_version": "49.0a1"
+      "strict_min_version": "53.0"
     }
   },
   "permissions": [ "contextMenus", "notifications", "tabs", "storage", "<all_urls>" ]

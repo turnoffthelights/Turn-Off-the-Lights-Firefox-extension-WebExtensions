@@ -2,8 +2,8 @@
 /*
 
 Turn Off the Lights
-The entire page will be fading to dark, so you can watch the videos as if you were in the cinema.
-Copyright (C) 2016 Stefan vd
+The entire page will be fading to dark, so you can watch the video as if you were in the cinema.
+Copyright (C) 2017 Stefan vd
 www.stefanvd.net
 www.turnoffthelights.com
 
@@ -123,10 +123,10 @@ var i18nldesspeech5command = chrome.i18n.getMessage("desspeech5command"); // bro
 		if (event.results[i].isFinal) {
 			final_transcript = event.results[i][0].transcript;
 			// console.log(final_transcript);
-			chrome.storage.local.set({"speechhistorysave": final_transcript});
+			chrome.storage.sync.set({"speechhistorysave": final_transcript});
 				if (userSaid(final_transcript, i18nldesspeech1command)) {
 				// console.log("yes: turn off the lights");
-				chrome.storage.local.set({"slideeffect": true});
+				chrome.storage.sync.set({"slideeffect": true});
 				chrome.tabs.query({active: true}, function (tabs) {
 					for (var i = 0; i < tabs.length; i++) {
 						if (tabs[i].url.match(/^http/i)){
@@ -137,7 +137,7 @@ var i18nldesspeech5command = chrome.i18n.getMessage("desspeech5command"); // bro
 				}
 				else if (userSaid(final_transcript, i18nldesspeech2command)) {
 				// console.log("yes: turn on the lights");
-				chrome.storage.local.set({"slideeffect": true});
+				chrome.storage.sync.set({"slideeffect": true});
 				chrome.tabs.query({active: true}, function (tabs) {
 					for (var i = 0; i < tabs.length; i++) {
 						if (tabs[i].url.match(/^http/i)){
@@ -180,7 +180,7 @@ function startButton(event) {
         recognition.abort();
     }
 	final_transcript = '';
-	chrome.storage.local.get(['speechcountry'], function(response){
+	chrome.storage.sync.get(['speechcountry'], function(response){
 		var speechcountry = response['speechcountry'];if(speechcountry == null)speechcountry = 'en-US';
 		recognition.lang = speechcountry;
 	});
@@ -190,7 +190,7 @@ function startButton(event) {
 }
 
 function speechrecognition(){
-chrome.storage.local.get(['speech', 'speechonly', 'speechDomains'], function(response){
+chrome.storage.sync.get(['speech', 'speechonly', 'speechDomains'], function(response){
 speech = response['speech'];
 speechonly  = response['speechonly'];
 
