@@ -158,7 +158,7 @@ chrome.tabs.query({}, function(tabs){
     var i;
     var l = tabs.length;
     for(i = 0; i < l; i++){
-    chrome.browserAction.setIcon({tabId : tabs[i].id, path : {"19": "icons/iconwhite19.png","38": "icons/iconwhite19@2x.png"}});
+    chrome.browserAction.setIcon({tabId : tabs[i].id, path : {"19": "icons/iconwhite19.png","38": "icons/iconwhite38.png"}});
     }
 });
 }
@@ -171,7 +171,7 @@ else{
     }
 // return default icon
 chrome.storage.sync.get(['icon'], function(items){
-if(items["icon"] == undefined){items["icon"] = "icons/iconstick19@2x.png";}
+if(items["icon"] == undefined){items["icon"] = "icons/iconstick38.png";}
 chrome.tabs.query({}, function(tabs){
     var i;
     var l = tabs.length;
@@ -199,7 +199,7 @@ return true;
 chrome.tabs.onActivated.addListener(function(activeInfo){
     chrome.tabs.get(activeInfo.tabId, function(tab){
         chrome.storage.sync.get(['icon'], function(items){
-            if(items["icon"] == undefined){items["icon"] = "icons/iconstick19@2x.png";}
+            if(items["icon"] == undefined){items["icon"] = "icons/iconstick38.png";}
             chrome.browserAction.setIcon({tabId : activeInfo.tabId, path : {"19": items["icon"],"38": items["icon"]}});
         });
         // for all tabs
@@ -219,7 +219,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
     }
 
     chrome.storage.sync.get(['icon'], function(chromeset){
-        if(chromeset["icon"] == undefined){chromeset["icon"] = "icons/iconstick19@2x.png";}
+        if(chromeset["icon"] == undefined){chromeset["icon"] = "icons/iconstick38.png";}
         chrome.browserAction.setIcon({tabId : tabId, path : {"19": chromeset["icon"],"38": chromeset["icon"]}});
     });
     // for all tabs
@@ -478,67 +478,237 @@ chrome.storage.onChanged.addListener(function(changes, namespace){
             });
             }
         }
-        if(changes['ecosavertime']){
-            if(changes['ecosavertime'].newValue){
+        if(changes['badge']){
+            if(changes['badge'].newValue == true){checkbadge()}else{checkbadge()}
+        }
+        if(changes['autoplay'] || changes['mousespotlights'] || changes['autoplayDomains'] || changes['autoplaychecklistwhite'] || changes['autoplaychecklistblack'] || changes['autoplayonly'] || changes['aplay'] || changes['apause'] || changes['astop'] || changes['autoplaydelay'] || changes['autoplaydelaytime']){
             chrome.tabs.query({}, function(tabs){
                 var i;
-                var l = tabs.length; 
+                var l = tabs.length;
                 for(i = 0; i < l; i++){
                     var protocol = tabs[i].url.split(":")[0];
                     if(protocol == "http" || protocol == "https"){
-                    chrome.tabs.sendMessage(tabs[i].id, { action: "gonewecosavetime",message: changes['ecosavertime'].newValue });
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshautoplay" });
+                        }
                     }
                 }
             });
-            }
         }
-        if(changes['badge']){
-            if(changes['badge'].newValue == true){checkbadge()}else{checkbadge()}
+        if(changes['videotool'] || changes['videotoolonly'] || changes['videotoolDomains'] || changes['videotoolchecklistwhite'] || changes['videotoolchecklistblack'] || changes['speedtoolbar'] || changes['videozoom'] || changes['visopacity'] || changes['videotoolcolor']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshvideotoolbar" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['videovolume'] || changes['videovolumealt'] || changes['videovolumehold'] || changes['videovolumeposa'] || changes['videovolumeposb'] || changes['videovolumeposc'] || changes['videovolumecolor'] || changes['videovolumelabel'] || changes['videovolumesteps']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshmousescroll" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['ambilight'] || changes['ambilightfixcolor'] || changes['ambilight4color'] || changes['ambilightvarcolor'] || changes['atmosvivid'] || changes['vpause'] || changes['atmosfpsauto'] || changes['atmosfpsmanual'] || changes['drawatmosfps'] || changes['ambilightcolorhex'] || changes['ambilight1colorhex'] || changes['ambilight2colorhex'] || changes['ambilight3colorhex'] || changes['ambilight4colorhex'] || changes['ambilightrangeblurradius'] || changes['ambilightrangespreadradius'] || changes['atmosontotlmode'] || changes['atmosphereonly'] || changes['atmosphereDomains']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "goenableatmos" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['reflection'] || changes['reflectionamount']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshreflection" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['hovervideo'] || changes['hovervideoamount']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshhovervideo" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['playrate'] || changes['playrateamount']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshplayrate" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['nightmodebck'] || changes['nightmodetxt'] || changes['nightmodehyperlink']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gonightmodecolors" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['nighttheme'] || changes['lampandnightmode'] || changes['nightmodeswitchhide'] || changes['nightmodeswitchhidetime'] || changes['nightonly'] || changes['nightmodechecklistwhite'] || changes['nightmodechecklistblack'] || changes['nightDomains'] || changes['nightmodebydomain'] || changes['nightmodebypage'] || changes['nightactivetime'] || changes['nmbegintime'] || changes['nmendtime'] || changes['nightenabletheme'] || changes['nighthover'] || changes['nmtopleft'] || changes['nmtopright'] || changes['nmbottomright'] || changes['nmbottomleft'] || changes['nmcustom']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "goenablenightmode" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['nightmodegesture']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshnightmodegesture" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['ecosaver'] || changes['ecosavertime']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefresheyesaver" });
+                        }
+                    }
+                }
+            });
+        }
+        if(changes['nighttime'] || changes['begintime'] || changes['endtime']){
+            chrome.tabs.query({}, function(tabs){
+                var i;
+                var l = tabs.length;
+                for(i = 0; i < l; i++){
+                    var protocol = tabs[i].url.split(":")[0];
+                    if(protocol == "http" || protocol == "https"){
+                        if(tabs[i].url != totloptionspage){
+                            chrome.tabs.sendMessage(tabs[i].id, { action: "gorefreshnighttime" });
+                        }
+                    }
+                }
+            });
         }
 
         // Group Policy
         // check the values with group policy, if different values. Then change it back
-        if (changes['autoplay']) {
-            if (changes['autoplay'].newValue != policygrouparray["AutoPlay"]) {
-                chrome.storage.sync.set({ "autoplay": policygrouparray["AutoPlay"] });
+        if(changes['autoplay']){
+            if(policygrouparray.hasOwnProperty('AutoPlay')){
+                if(changes['autoplay'].newValue != policygrouparray["AutoPlay"]){
+                    chrome.storage.sync.set({ "autoplay": policygrouparray["AutoPlay"] });
+                }
             }
         }
-        if (changes['autostop']) {
-            if (changes['autostop'].newValue != policygrouparray["AutoStop"]) {
+        if(changes['autostop']){
+            if(policygrouparray.hasOwnProperty('AutoStop')){
+                if(changes['autostop'].newValue != policygrouparray["AutoStop"]){
                 chrome.storage.sync.set({ "autostop": policygrouparray["AutoStop"] });
+                }
             }
         }
-        if (changes['customqualityyoutube']) {
-            if (changes['customqualityyoutube'].newValue != policygrouparray["AutoHD"]) {
+        if(changes['customqualityyoutube']){
+            if(policygrouparray.hasOwnProperty('AutoHD')){
+                if(changes['customqualityyoutube'].newValue != policygrouparray["AutoHD"]){
                 chrome.storage.sync.set({ "customqualityyoutube": policygrouparray["AutoHD"] });
+                }
             }
         }
-        if (changes['maxquality']) {
-            if (changes['maxquality'].newValue != policygrouparray["AutoHDQuality"]) {
-                chrome.storage.sync.set({ "maxquality": policygrouparray["AutoHDQuality"] });
+        if(changes['maxquality']){
+            if(policygrouparray.hasOwnProperty('AutoHDQuality')){
+                if(changes['maxquality'].newValue != policygrouparray["AutoHDQuality"]){
+                    chrome.storage.sync.set({ "maxquality": policygrouparray["AutoHDQuality"] });
+                }
             }
         }
-        if (changes['block60fps']) {
-            if (changes['block60fps'].newValue != policygrouparray["Block60FPS"]) {
+        if(changes['block60fps']){
+            if(policygrouparray.hasOwnProperty('Block60FPS')){
+                if(changes['block60fps'].newValue != policygrouparray["Block60FPS"]){
                 chrome.storage.sync.set({ "block60fps": policygrouparray["Block60FPS"] });
+                }
             }
         }
-        if (changes['nighttheme']) {
-            if (changes['nighttheme'].newValue != policygrouparray["NightModeSwitch"]) {
+        if(changes['nighttheme']){
+            if(policygrouparray.hasOwnProperty('NightModeSwitch')){
+                if(changes['nighttheme'].newValue != policygrouparray["NightModeSwitch"]){
                 chrome.storage.sync.set({ "nighttheme": policygrouparray["NightModeSwitch"] });
+                }
             }
         }
-        if (changes['videovolume']) {
-            if (changes['videovolume'].newValue != policygrouparray["MouseVolumeScroll"]) {
+        if(changes['videovolume']){
+            if(policygrouparray.hasOwnProperty('MouseVolumeScroll')){
+                if(changes['videovolume'].newValue != policygrouparray["MouseVolumeScroll"]){
                 chrome.storage.sync.set({ "videovolume": policygrouparray["MouseVolumeScroll"] });
+                }
             }
         }
-        if (changes['videotool']) {
-            if (changes['videotool'].newValue != policygrouparray["VideoToolbar"]) {
+        if(changes['videotool']){
+            if(policygrouparray.hasOwnProperty('VideoToolbar')){
+                if(changes['videotool'].newValue != policygrouparray["VideoToolbar"]){
                 chrome.storage.sync.set({ "videotool": policygrouparray["VideoToolbar"] });
+                }
             }
         }
-})
+});
 
 // omnibox
 var i18nomninightmode = chrome.i18n.getMessage("omninightmode").toLowerCase();
@@ -546,6 +716,7 @@ var i18nomnidaymode = chrome.i18n.getMessage("omnidaymode").toLowerCase();
 var i18nomnilightoff = chrome.i18n.getMessage("omnilightoff").toLowerCase();
 var i18nomnilighton = chrome.i18n.getMessage("omnilighton").toLowerCase();
 var i18nomnihelp = chrome.i18n.getMessage("omnihelp").toLowerCase();
+if(typeof chrome.omnibox !== 'undefined'){
 chrome.omnibox.onInputChanged.addListener(
     function(text, suggest){
         var suggtext;
@@ -584,7 +755,7 @@ chrome.omnibox.onInputEntered.addListener(
             });
         }
 });
-
+}
 
 // date today
 var today = new Date();
@@ -638,77 +809,88 @@ if((chromeset["firstRun"]!="false") && (chromeset["firstRun"]!=false)){
 
 function readgrouppolicy(items){
     var SuppressWelcomePage;
-    var AutoPlay;
-    var AutoStop;
-    var AutoHD;
-    var AutoHDQuality = "highres"; // default option
-    var Block60FPS;
-    var NightModeSwitch;
-    var MouseVolumeScroll;
-    var VideoToolbar;
-    if (chrome.runtime.lastError){
+
+    if(chrome.runtime.lastError){
         //console.error("managed error: " + chrome.runtime.lastError.message);
-    } else {
+    }else{
         //console.log("items", items);
-        if (items.SuppressWelcomePage == true) {
+        if(items.SuppressWelcomePage == true){
             var crrinstall = new Date().getTime();
             chrome.storage.sync.set({ "firstRun": false, "version": "2.4", "firstDate": crrinstall });
-        } else {
+        }else{
             // no value, then show the page
             initwelcome();
         }
-        if (items.AutoPlay == true) { AutoPlay = true; }
-        else { AutoPlay = false; }
-        if (items.AutoStop == true) { AutoStop = true; }
-        else { AutoStop = false; }
-        if (items.AutoHD == true) { AutoHD = true; }
-        else { AutoHD = false; }
-        if (items.AutoHDQuality != "") { AutoHDQuality = items.AutoHDQuality; }
-        if (items.Block60FPS == true) { Block60FPS = true; }
-        else { Block60FPS = false; }
-        if (items.NightModeSwitch == true) { NightModeSwitch = true; }
-        else { NightModeSwitch = false; }
-        if (items.MouseVolumeScroll == true) { MouseVolumeScroll = true; }
-        else { MouseVolumeScroll = false; }
-        if (items.VideoToolbar == true) { VideoToolbar = true; }
-        else { VideoToolbar = false; }
+
+        // saving group policy values
+        var savinggroup = {};
+
+        if(items.AutoPlay == true){savinggroup["autoplay"] = true;}
+        else if(items.AutoPlay == false){savinggroup["autoplay"] = false;}
+
+        if(items.AutoStop == true){savinggroup["autostop"] = true;}
+        else if(items.AutoStop == false){savinggroup["autostop"] = false;}
+
+        if(items.AutoHD == true){savinggroup["customqualityyoutube"] = true;}
+        else if(items.AutoHD == false){savinggroup["customqualityyoutube"] = false;}
+
+        if(items.AutoHDQuality != ""){savinggroup["maxquality"] = items.AutoHDQuality;}
+
+        if(items.Block60FPS == true){savinggroup["block60fps"] = true;}
+        else if(items.Block60FPS == false){savinggroup["block60fps"] = false;}
+
+        if(items.NightModeSwitch == true){savinggroup["nighttheme"] = true;}
+        else if(items.NightModeSwitch == false){savinggroup["nighttheme"] = false;}
+
+        if(items.MouseVolumeScroll == true){savinggroup["videovolume"] = true;}
+        else if(items.MouseVolumeScroll == false){savinggroup["videovolume"] = false;}
+
+        if(items.VideoToolbar == true){savinggroup["videotool"] = true;}
+        else if(items.VideoToolbar == false){savinggroup["videotool"] = false;}
+
         // save total group policy
-        chrome.storage.sync.set({ "autoplay": AutoPlay, "autostop": AutoStop, "customqualityyoutube": AutoHD, "maxquality": AutoHDQuality, "block60fps": Block60FPS, "nighttheme": NightModeSwitch, "videovolume": MouseVolumeScroll, "videotool": VideoToolbar });
+        chrome.storage.sync.set(savinggroup);
     }
 }
 
 /*var policygrouparray = {};
 if(chrome.storage.managed){
-    chrome.storage.managed.onChanged.addListener(function (changes, namespace) {
+    chrome.storage.managed.onChanged.addListener(function(changes, namespace){
         // save in memory
-        Object.keys(changes).forEach(function(policyName) {
+        Object.keys(changes).forEach(function(policyName){
             policygrouparray[policyName] = changes[policyName].newValue;
         });
 
-        if (changes['AutoPlay']) {
-            chrome.storage.sync.set({ "autoplay": changes['AutoPlay'].newValue });
+        // update saving group policy values
+        var updatesavinggroup = {};
+
+        if(changes['AutoPlay']){
+            updatesavinggroup["autoplay"] = changes['AutoPlay'].newValue;
         }
-        if (changes['AutoStop']) {
-            chrome.storage.sync.set({ "autostop": changes['AutoStop'].newValue });
+        if(changes['AutoStop']){
+            updatesavinggroup["autostop"] = changes['AutoStop'].newValue;
         }
-        if (changes['AutoHD']) {
-            chrome.storage.sync.set({ "customqualityyoutube": changes['AutoHD'].newValue });
+        if(changes['AutoHD']){
+            updatesavinggroup["customqualityyoutube"] = changes['AutoHD'].newValue;
         }
-        if (changes['AutoHDQuality']) {
-            chrome.storage.sync.set({ "maxquality": changes["AutoHDQuality"].newValue });
+        if(changes['AutoHDQuality']){
+            updatesavinggroup["maxquality"] = changes['AutoHDQuality'].newValue;
         }
-        if (changes['Block60FPS']) {
-            chrome.storage.sync.set({ "block60fps": changes["Block60FPS"].newValue });
+        if(changes['Block60FPS']){
+            updatesavinggroup["block60fps"] = changes['Block60FPS'].newValue;
         }
-        if (changes['NightModeSwitch']) {
-            chrome.storage.sync.set({ "nighttheme": changes["NightModeSwitch"].newValue });
+        if(changes['NightModeSwitch']){
+            updatesavinggroup["nighttheme"] = changes['NightModeSwitch'].newValue;
         }
-        if (changes['MouseVolumeScroll']) {
-            chrome.storage.sync.set({ "videovolume": changes["MouseVolumeScroll"].newValue });
+        if(changes['MouseVolumeScroll']){
+            updatesavinggroup["videovolume"] = changes['MouseVolumeScroll'].newValue;
         }
-        if (changes['VideoToolbar']) {
-            chrome.storage.sync.set({ "videotool": changes["VideoToolbar"].newValue });
+        if(changes['VideoToolbar']){
+            updatesavinggroup["videotool"] = changes['VideoToolbar'].newValue;
         }
+
+        // update save total group policy
+        chrome.storage.sync.set(updatesavinggroup);
 });
 }*/
 
@@ -725,9 +907,9 @@ chrome.runtime.onInstalled.addListener(function(details){
     }else{*/
         initwelcome();
     //}
-
     checkbadge();
 });
 // first run - check the badge new value for this day
 chrome.runtime.onStartup.addListener(checkbadge);
+
 checkbadge();
