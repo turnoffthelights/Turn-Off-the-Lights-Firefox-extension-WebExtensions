@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_name__",
   "short_name": "Turn Off the Lights",
-  "version": "4.4.3.0",
+  "version": "4.4.5.0",
   "description": "__MSG_description__",
   "author": "Stefan vd",
   "homepage_url": "https://www.turnoffthelights.com/support/",
@@ -27,7 +27,7 @@
     "scripts": ["js/constants.js","js/background.js"]
   },
   "content_security_policy": {
-    "extension_pages": "default-src 'none'; style-src 'self'; media-src https://www.turnoffthelights.com; child-src https://www.youtube.com https://www.turnoffthelights.com; connect-src https://www.turnoffthelights.com; script-src 'self'; img-src 'self' https://www.turnoffthelights.com * data:; object-src 'none'"
+    "extension_pages": "default-src 'none'; style-src 'self'; media-src https://www.turnoffthelights.com; child-src https://www.youtube.com https://www.turnoffthelights.com; connect-src https://www.turnoffthelights.com; script-src 'self'; img-src 'self' https://www.turnoffthelights.com * data:; object-src 'none'; worker-src 'self'"
   },
   "content_scripts": [
     {
@@ -81,20 +81,19 @@
   },
   "web_accessible_resources": [{
     "resources": ["/js/fps-block.js", "/js/hd-quality.js"],
-    "matches": ["*://www.youtube.com/*"],
-    "use_dynamic_url": true
+    "matches": ["*://www.youtube.com/*"]
   },
   {
     "resources": ["/js/video-player-status.js"],
-    "matches": ["<all_urls>"],
-    "use_dynamic_url": true
+    "matches": ["<all_urls>"]
   }],
   "permissions": ["contextMenus", "tabs", "storage", "webNavigation", "scripting", "theme"],
   "browser_specific_settings": {
     "gecko": {
       "id": "stefanvandamme@stefanvd.net",
       "strict_min_version": "109.0"
-    }
+    },
+    "gecko_android": {}
   },
   "host_permissions": ["<all_urls>"]
 }
